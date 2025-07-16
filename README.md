@@ -36,20 +36,20 @@ SafeStep is an AI-powered smart wearable designed to ensure personal safety for 
 ## 📸 Images
 
 ### 🧩 Prototype Circuit Setup
-![Prototype Circuit](imgs/SafeStep AI Enabled.jpg)
+![Prototype Circuit](imgs/1.jpg)
 
 ---
 
 ## 🎥 Demo Videos
 
 ### 🔘 Single Press Emergency Notification
-[![Single Press Demo](imgs/SafeStep AI Enabled (1).mp4)
+[![Single Press Demo](imgs/2.mp4)
 
 ### 🧠 ML Model Live Detection
-[![ML Model Detection](imgs/SafeSafeStep AI Enabled (1).mp4)
+[![ML Model Detection](imgs/3.mp4)
 
 ### 🌍 Geofencing Alert Trigger
-[![Geofencing Demo](imgs/SafeSafeStep AI Enabled (1).mp4)
+[![Geofencing Demo](imgs/4.mp4)
 
 
 ---
