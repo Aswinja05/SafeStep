@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div id="header_amb">
+        <h1>108 - Ambulance Control Room</h1>
+    </div>
+    <div class="container">
+        <div id="DisplayCard">
+            <h2>🚨 Emergency Alert - <span class="critical">Serious</span></h2>
+            <div class="field">
+                <span>Name:</span> Sharma
+            </div>
+            <div class="field">
+                <span>Age:</span> 26
+            </div>
+            <div class="field">
+                <span>Contact:</span> +91-9876543210
+            </div>
+            <div class="field">
+                <span>Guardian Contact:</span> Adarsh (+91-8765432109)
+            </div>
+            <div class="field">
+                <span>Live Location:</span> Porur, Chennai
+            </div>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31099.346920741846!2d77.6690772!3d13.009008999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1738073633997!5m2!1sen!2si"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            
+            <div class="action">
+                Dispatch team immediately to the location and notify guardians.
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/amb/script.js"></script>
+<script src="https://cdn.socket.io/4.5.1/socket.io.min.js"></script>
+</html>
