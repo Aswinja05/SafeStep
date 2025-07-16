@@ -6,7 +6,6 @@ const mongoose = require("mongoose");
 const http = require("http");
 const socketIo = require("socket.io");
 const { GoogleGenerativeAI } = require("@google/generative-ai");
-const GENAI_API_KEY = "AIzaSyCbrAo_lkkUEFR9qU8vrrxSL44DGZtO6ac";
 
 fetch("https://www.google.com")
   .then((response) => {
@@ -69,7 +68,6 @@ admin.initializeApp({
 });
 
 const MONGODB_URI =
-  "mongodb+srv://Aswin:Aswin123@cluster0.phbtcqz.mongodb.net/";
 mongoose
   .connect(MONGODB_URI)
   .then(() => {
@@ -157,8 +155,7 @@ app.post("/save-user", async (req, res) => {
 
 // API to send panic alert
 let guardian =
-  "d3EfFoJIT1OAyO26sFxXVy:APA91bH4uGMDu9zetVpD9EzAgOf1kysH16vac-zpaUtNBL1fVuW-Ox79atnPCtYG_bexdjtEFZX2xt-DcHpZTiy0MIjtDRa6wusjuakqeALYIMfuyBAhjHQ";
-app.post("/panic-alert", (req, res) => {
+  app.post("/panic-alert", (req, res) => {
   // const { gpsLocation, panicType, guardian } = req.body;
 
   const message = {
@@ -302,44 +299,10 @@ app.post("/guardian-add", async (req, res) => {
   res.status(200).json({ message: "Guardian added successfully" });
 });
 
-// app.get('/get-guardians/:uid', async (req, res) => {
-//   try {
-//       const { uid } = req.params;
-//       const user = await User.findOne({ uid });
 
-//       if (!user) {
-//           return res.status(404).json({ message: 'User not found' });
-//       }
-//       const guardians = await User.find(
-//           { uid: { $in: user.guardians } },
-//           { uid: 1, displayName: 1, _id: 0 }
-//       );
 
-//       res.json({ guardians });
-//   } catch (error) {
-//       console.error(error);
-//       res.status(500).json({ message: 'Internal Server Error' });
-//   }
-// });
 
-app.get("/namaskara/:uid", async (req, res) => {
-  // let uid=req.params.uid;
-  // console.log(uid);
-  // res.status(200).json({message:"Namaskara"});
 
-  const { uid } = req.params;
-  const user = await User.findOne({ uid });
-
-  if (!user) {
-    return res.status(404).json({ message: "User not found" });
-  }
-  const guardians = await User.find(
-    { uid: { $in: user.guardians } },
-    { uid: 1, displayName: 1, _id: 0 }
-  );
-
-  res.json({ guardians });
-});
 
 
 
