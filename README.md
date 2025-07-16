@@ -7,7 +7,7 @@ SafeStep is an AI-powered smart wearable designed to ensure personal safety for 
 ## 🔒 Key Features
 
 - 📡 **Emergency Detection via ML**: Predicts abnormal or suspected user conditions using heart rate, SpO2, motion, and orientation data.
-- 🧠 **Custom Trained ML Model**: Classifies physical states as normal, abnormal, or suspected abnormal using TensorFlow.
+- 🧠 **Custom Trained ML Model**: Classifies physical states as normal, abnormal, or suspected abnormal.
 - 🔘 **Single Press Alert System**: Button press triggers instant guardian notification.
 - 🌍 **Geofencing Alerts**: Sends real-time alerts when user crosses predefined safe zones.
 - 🔄 **Real-time Communication**: Emergency signals and live location sent using WebSocket.
@@ -17,10 +17,10 @@ SafeStep is an AI-powered smart wearable designed to ensure personal safety for 
 
 ## 🧠 Machine Learning
 
-- Model Type: Decision Tree (extendable to LSTM)
+- Model Type: Multi level Perceptron(MLP)
 - Input Parameters: Heart Rate, SpO2, Accelerometer (x/y/z), Gyroscope (x/y/z)
 - Output Labels: Normal, Abnormal, Suspected Abnormal
-- Tools Used: TensorFlow, scikit-learn, Python
+- Tools Used: TensorFlow, TinyML
 
 ---
 
@@ -28,8 +28,7 @@ SafeStep is an AI-powered smart wearable designed to ensure personal safety for 
 
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
-- **ML Model**: TensorFlow (trained offline, predictions integrated via backend)
-- **Real-Time**: WebSocket, RESTful APIs
+- **ML Model**: TensorFlow
 - **IoT Devices**: ESP32, MAX30102 (Heart Rate & SpO2), MPU6050 (Gyro + Accelerometer)
 
 ---
@@ -37,25 +36,21 @@ SafeStep is an AI-powered smart wearable designed to ensure personal safety for 
 ## 📸 Images
 
 ### 🧩 Prototype Circuit Setup
-![Prototype Circuit](images/prototype-circuit.jpg)
-
-### 🧠 Sensor Module Close-Up
-![Sensors](images/sensor-module.jpg)
+![Prototype Circuit](imgs/SafeStep AI Enabled.jpg)
 
 ---
 
 ## 🎥 Demo Videos
 
 ### 🔘 Single Press Emergency Notification
-[![Single Press Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+[![Single Press Demo](imgs/SafeStep AI Enabled.mp4)
 
 ### 🧠 ML Model Live Detection
-[![ML Model Detection](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+[![ML Model Detection](imgs/SafeSafeStep AI Enabled (1).mp4)
 
 ### 🌍 Geofencing Alert Trigger
-[![Geofencing Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+[![Geofencing Demo](imgs/SafeSafeStep AI Enabled (1).mp4)
 
-> 🔁 Replace `YOUR_VIDEO_ID` with the actual YouTube video ID or use a direct video link if hosted elsewhere.
 
 ---
 
