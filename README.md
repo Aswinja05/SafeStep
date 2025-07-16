@@ -49,7 +49,7 @@ SafeStep is an AI-powered smart wearable designed to ensure personal safety for 
 [![ML Model Detection](imgs/3.mp4)
 
 ### 🌍 Geofencing Alert Trigger
-[![Geofencing Demo](https://drive.google.com/file/d/1msbquhOyscf1sv3simR-SNilmphple_l/view?usp=sharing)
+![Geofencing Demo](https://drive.google.com/file/d/1msbquhOyscf1sv3simR-SNilmphple_l/view?usp=sharing)
 
 
 ---
