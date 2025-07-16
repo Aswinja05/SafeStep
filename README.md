@@ -1,36 +1,44 @@
-# 🍽️ Crowd Management System for Canteen
+# 👟 SafeStep – AI-Enabled Smart Shoe for Women and Kids Safety
 
-A web-based platform built to streamline food ordering and reduce overcrowding in campus canteens. Students can pre-order food, receive pickup notifications, and avoid long queues, especially during peak hours. The system enhances efficiency for both users and canteen staff.
+SafeStep is an AI-powered smart wearable designed to ensure personal safety for women and children. By integrating sensors, IoT, and machine learning, the shoe detects physical emergencies like fainting, abnormal vitals, or panic button presses, and instantly alerts guardians with live location.
 
 ---
 
 ## 🔒 Key Features
 
-- 🧾 **Online Food Ordering**: Allows students to place food orders via a simple web interface.  
-- ⏱️ **Real-time Notifications**: Users are notified when their food is ready, minimizing physical crowding.  
-- 👨‍🍳 **Admin Order Panel**: Canteen staff can efficiently view and manage incoming orders.  
-- 📉 **Wait Time Reduction**: Reduced average wait time from 15 minutes to 3–4 minutes.  
-- 🔐 **Simple Auth System**: Login and order tracking implemented for better user flow.
+- 📡 **Emergency Detection via ML**: Predicts abnormal or suspected user conditions using heart rate, SpO2, motion, and orientation data.
+- 🧠 **Custom Trained ML Model**: Classifies physical states as normal, abnormal, or suspected abnormal.
+- 🔘 **Single Press Alert System**: Button press triggers instant guardian notification.
+- 🌍 **Geofencing Alerts**: Sends real-time alerts when user crosses predefined safe zones.
+- 🔄 **Real-time Communication**: Emergency signals and live location sent using WebSocket.
+- 🛠️ **IoT Integration**: Connected to ESP32, MAX30102, MPU6050 for real-time data gathering.
 
 ---
 
+## 🧠 Machine Learning
+
+- Model Type: Multi level Perceptron(MLP)
+- Input Parameters: Heart Rate, SpO2, Accelerometer (x/y/z), Gyroscope (x/y/z)
+- Output Labels: Normal, Abnormal, Suspected Abnormal
+- Tools Used: TensorFlow, TinyML
+
+- ---
+
 ## 🛠️ Tech Stack
 
-- **Frontend**: HTML, CSS, JavaScript  
-- **Backend**: Node.js, Express.js  
+- **Backend**: Node.js, Express.js
 - **Database**: MongoDB
+- **ML Model**: TensorFlow
+- **IoT Devices**: ESP32, MAX30102 (Heart Rate & SpO2), MPU6050 (Gyro + Accelerometer)
 
 ---
 
 ## 📸 Images
 
-### 🧾 User Interface  
-<img src="imgs/1.jpeg" width="500"/>
+### 🧩 Prototype Circuit Setup
+![Prototype Circuit](imgs/1.jpg)
 
-### 🪪 Login Using Student ID  
-<img src="imgs/2.jpeg" width="500"/>
+![Geofencing Demo](imgs/v1.png)
 
-### 🧑‍🍳 Admin Order Management  
-<img src="imgs/3.jpeg" width="500"/>
 
 ---
